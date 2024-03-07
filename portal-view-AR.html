@@ -152,7 +152,7 @@ function initialize()
 		defaultMaterial
 	);
 	// portal.position.y = portalHeight/2 + portalBorder;
-	portal.position.z = -portalHeight/4;
+	portal.position.z = portalHeight/4;
 	portal.rotation.x = Math.PI / 2;
 	portal.layers.set(1);
 	smoothedRoot.add(portal);
@@ -166,7 +166,7 @@ function initialize()
 		new THREE.PlaneGeometry(portalWidth + 2*portalBorder, portalHeight + 2*portalBorder),
 		portalMaterial
 	);
-	portalBorderMesh.position.y = portal.position.y;
+	portalBorderMesh.position.z = portal.position.z;
 	portalBorderMesh.rotation.x = Math.PI / 2;
 	portalBorderMesh.layers.set(0);
 	smoothedRoot.add(portalBorderMesh);
