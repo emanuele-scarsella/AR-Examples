@@ -166,7 +166,7 @@ function initialize()
 		portalMaterial
 	);
 	portalBorderMesh.position.y = portal.position.y;
-	portalBorderMesh.rotation.x = portal.rotation.x;
+	portalBorderMesh.rotation.x = Math.PI / 2;
 	portalBorderMesh.layers.set(0);
 	smoothedRoot.add(portalBorderMesh);
 	
