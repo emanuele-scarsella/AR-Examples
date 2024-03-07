@@ -120,8 +120,8 @@ function initialize()
 	let smoothedRoot = new THREE.Group();
 	scene.add(smoothedRoot);
 	smoothedControls = new THREEx.ArSmoothedControls(smoothedRoot, {
-		lerpPosition: 0.5,
-		lerpQuaternion: 0.8,
+		lerpPosition: 0.25,
+		lerpQuaternion: 0.1,
 		lerpScale: 1,
 		// minVisibleDelay: 1,
 		// minUnvisibleDelay: 1,
@@ -143,8 +143,8 @@ function initialize()
 		opacity: 0.6
 	});
 	
-	let portalWidth = 2;
-	let portalHeight = 3;
+	let portalWidth = 3;
+	let portalHeight = 4.5;
 	let portalBorder = 0.05;
 	
 	portal = new THREE.Mesh(
